@@ -1,3 +1,4 @@
+
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -7,6 +8,9 @@ module.exports = function(grunt) {
     concat: {
       options: {
         separator: ';',
+          // hacer que todo salga dentro de una funcion
+          banner: '/* Compilado: <%= grunt.template.today("yyyy-mm-dd") %> */\n' + '(function(){\n',
+          footer: '\n})();'
       },
       dist: {
         src: ['src/core.js', 'src/linear_graph.js'],
