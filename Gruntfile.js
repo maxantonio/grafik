@@ -9,8 +9,8 @@ module.exports = function(grunt) {
         separator: ';',
       },
       dist: {
-        src: ['src/core.js', 'src/linear_graph.js'],
-        dest: 'build/grafik.js',
+        src: ['src/core.js', 'src/date_range.js'],
+        dest: 'build/c3haikus.js',
       },
     },
 
